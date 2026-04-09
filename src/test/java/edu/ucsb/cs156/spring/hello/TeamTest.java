@@ -61,5 +61,11 @@ public class TeamTest {
         assertEquals(team.hashCode(), t2.hashCode());
     }
 
+@Test
+public void hashCode_returns_expected_value() {
+    Team t = new Team("test-team");
+    int result = t.hashCode();
+    assertEquals(-1226298695, result);
+}
 
 }
